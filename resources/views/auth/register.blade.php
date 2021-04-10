@@ -64,6 +64,9 @@
                             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="picture">
                         </div>
 
+
+                        
+
                         <!-- <div class="form-group">
                         <select name="role" class="form-select">
                             <option selected>Select Role</option>
