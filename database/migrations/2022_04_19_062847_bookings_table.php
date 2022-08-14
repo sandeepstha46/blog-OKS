@@ -20,9 +20,9 @@ class BookingsTable extends Migration
             $table->string('email')->unique();
             $table->boolean('status')->default(1);
             $table->integer('btype')->default(1);
-            $table->integer('p_number');
-            $table->integer('v_number');
-            $table->string('textarea');
+            $table->string('p_number', 15);
+            $table->string('v_number', 15);
+            $table->string('textarea')->nullable();
             $table->integer('u_id')->unsigned();
             $table->foreign('u_id')->references('id')->on('users');
             $table->timestamps();

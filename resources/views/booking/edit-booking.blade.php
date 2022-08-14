@@ -17,16 +17,16 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Booking ID</label>
-                            <input class="form-control" type="number" name="b_id" value="{{ $booking->b_id }}">
+                            <input class="form-control" type="text" name="b_id" value="{{ $booking->b_id }}">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 hide-input ">
                         <div class="form-group">
                             <label>Name</label>
                             <input class="form-control" type="text" name="name" value="{{ $booking->name }}">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 hide-input">
                         <div class="form-group">
                             <label>Email ID</label>
                             <input type="text" class="form-control" id="usr" name="email" value="{{ $booking->email}}">
@@ -36,7 +36,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Status</label>
-                            <select class="form-control" id="sel2" name="status">
+                            <select class="form-control" id="sel2" name="status" value="{{ $booking->status}}">
                                 <option value="1">Pending</option>
                                 <option value="2">Processing</option>
                                 <option value="3">Vehicle Received</option>
@@ -49,7 +49,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Booking Type</label>
-                            <select class="form-control" id="sel2" name="btype">
+                            <select class="form-control" id="sel2" name="btype" value="{{ $booking->btype}}">
                                 <option value="0">Select Service</option>
                                 <option value="1">Bike Service</option>
                                 <option value="2">Car Serivce</option>
@@ -62,7 +62,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Booking Type</label>
-                            <select class="form-control" id="sel2" name="btype">
+                            <select class="form-control" id="sel2" name="btype" value="{{ $booking->btype}}">
                                 <option value="0">Select Service</option>
                                 <option value="1">Bike Service</option>
                                 <option value="2">Car Serivce</option>
@@ -82,7 +82,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Vehicle Number</label>
-                            <input type="number" class="form-control" id="usr1" name="v_number"
+                            <input type="text" class="form-control" id="usr1" name="v_number"
                                 value="{{ $booking->v_number }}">
                         </div>
                     </div>

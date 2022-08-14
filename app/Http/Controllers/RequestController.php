@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Requests;
 use Illuminate\Support\Facades\Auth;
@@ -21,14 +22,15 @@ class RequestController extends Controller
 
     public function AddRequest()
     {
-        return view('request.add-request');
+        $user = User::find(Auth::user()->id);
+        return view('request.add-request', compact('user'));
     }
 
     public function NewRequest(Request $request)
     {
         $data = new Requests;
         $data->r_id = $request->r_id;
-        $data->name = $request->name;
+        $data->name = Auth::user()->name;
         $data->p_for = $request->p_for;
         $data->v_model = $request->v_model;
         $data->v_year = $request->v_year;

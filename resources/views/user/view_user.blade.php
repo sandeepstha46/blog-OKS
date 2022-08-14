@@ -39,13 +39,10 @@
                     <div class="col ml-md-n2 profile-user-info">
                         <h4 class="user-name mb-3">{{ $user->name }}</h4>
                         <h6 class="text-muted mt-1">{{ $user->email }}</h6>
-                        <div class="user-Location mt-1">Florida, United States</div>
-                        <div class="about-text">Here</div>
-                        <div class="about-text">Here</div>
                     </div>
                     <div class="col-auto profile-btn">
                         <a href="{{ route('user.profile.edit') }}" class="btn btn-primary"> Edit Profile </a>
-                        <a href="" class="btn btn-primary"> Edit Password </a>
+                        <!-- <a href="" class="btn btn-primary"> Edit Password </a> -->
                     </div>
                 </div>
             </div>
@@ -67,11 +64,11 @@
                                     </div>
                                     <div class="row">
                                         <p class="col-sm-3 text-sm-right mb-0 mb-sm-3">Phone</p>
-                                        <p class="col-sm-6">{{ $user->Phone }}</p>
+                                        <p class="col-sm-6">{{ $user->phone }}</p>
                                     </div>
                                     <div class="row">
                                         <p class="col-sm-3 text-sm-right mb-0 mb-sm-3">Mobile</p>
-                                        <p class="col-sm-6">{{ $user->Mobile }}</p>
+                                        <p class="col-sm-6">{{ $user->mobile }}</p>
                                     </div>
                                     <div class="row">
                                         <p class="col-sm-3 text-sm-right mb-0">Address</p>

@@ -12,6 +12,16 @@ body {
     overflow-x: hidden
 }
 
+
+.hide-input{
+    display: none;
+}
+
+.note{
+    color: #606060;
+    font-size: 0.9rem;
+}
+
 #mess-age {
     display: flex;
     justify-content: end;

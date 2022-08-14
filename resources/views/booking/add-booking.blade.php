@@ -16,17 +16,17 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Booking ID</label>
-                            <input class="form-control" type="number" name="b_id" placeholder="BKG-0001">
+                            <input class="form-control" type="text" name="b_id" placeholder="Eg: BKG-0001">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 hide-input">
                         <div class="form-group">
                             <label>Name</label>
-                            <input class="form-control" type="text" name="u_name" placeholder="Your Name"
+                            <input class="form-control pre-called" type="text" name="name" placeholder="Your Name"
                                 value="{{ $user->name }}">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 hide-input">
                         <div class="form-group">
                             <label>Email ID</label>
                             <input type="email" class="form-control" id="usr" name="email" placeholder="Email"
@@ -55,7 +55,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Vehicle Number</label>
-                            <input type="number" name="v_number" class="form-control" id="usr1">
+                            <input type="string" name="v_number" class="form-control" id="usr1">
                         </div>
                     </div>
                     <div class="col-md-3">

@@ -38,7 +38,7 @@ class BookingController extends Controller
     {
         $booking = new Bookings;
         $booking->b_id = $request->b_id;
-        $booking->u_name = Auth::user()->name;
+        $booking->name = Auth::user()->name;
         $booking->email = $request->email;
         $booking->btype = $request->btype;
         $booking->p_number = $request->p_number;
@@ -68,7 +68,9 @@ class BookingController extends Controller
         $booking->b_id = $request->b_id;
         $booking->name = $request->name;
         $booking->email = $request->email;
+        if (Auth::user()->utype === 'ADM') {
         $booking->status = $request->status;
+        }
         $booking->btype = $request->btype;
         $booking->p_number = $request->p_number;
         $booking->v_number = $request->v_number;

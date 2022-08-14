@@ -17,13 +17,15 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Request ID</label>
-                            <input class="form-control" type="number" name="r_id" placeholder="BKG-0001">
+                            <input class="form-control" type="string" name="r_id"
+                                placeholder="EG: Your name and number you want">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 hide-input">
                         <div class="form-group">
                             <label>Name</label>
-                            <input class="form-control" type="text" name="name" placeholder="Your Name">
+                            <input class="form-control" type="text" name="name" placeholder="Your Name"
+                                value="{{ $user->name }}">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -56,7 +58,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Remark</label>
-                            <textarea class="form-control" rows="5" id="comment" name="textarea" placeholder="If you have any enquiry, write here"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" name="textarea"
+                                placeholder="If you have any enquiry, write here"></textarea>
                         </div>
                     </div>
                 </div>

@@ -27,6 +27,11 @@ class UserController extends Controller
         $data = User::find(Auth::user()->id);
         $data->name = $request->name;
         $data->email = $request->email;
+        $data->dob = $request->dob;
+        $data->phone = $request->phone;
+        $data->mobile = $request->mobile;
+        $data->address = $request->address;
+        $data->gender = $request->gender;
         if ($request->file('profile_photo_path')) {
             $file = $request->file('profile_photo_path');
             @unlink(public_path('images/upload_images/user_images' . $data->profile_photo_path));

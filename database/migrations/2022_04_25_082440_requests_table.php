@@ -21,7 +21,7 @@ class RequestsTable extends Migration
             $table->string('v_model');
             $table->date('v_year');
             $table->string('req_part');
-            $table->string('textarea');
+            $table->string('textarea')->nullable();
             $table->boolean('status')->default(1);
             $table->integer('u_id')->unsigned();
             $table->foreign('u_id')->references('id')->on('users');
